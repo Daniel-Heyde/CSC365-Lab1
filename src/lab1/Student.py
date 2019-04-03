@@ -1,10 +1,10 @@
-
 class Student:
     """class for student object"""
 
     def __init__(self, line):
         # parse given file line into student object
         studentInfo = line.split(",")
+        self.line = line
         self.stLastName = studentInfo[0]
         self.stFirstName = studentInfo[1]
         self.grade = studentInfo[2]
@@ -13,3 +13,6 @@ class Student:
         self.gpa = studentInfo[5]
         self.tLastName = studentInfo[6]
         self.tFirstName = studentInfo[7]
+
+    def __repr__(self):
+        return "("+self.line+")"
