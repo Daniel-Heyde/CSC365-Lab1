@@ -1,9 +1,13 @@
+import sys
+
 class Student:
     """class for student object"""
 
     def __init__(self, line):
         # parse given file line into student object
         studentInfo = line.split(",")
+        if len(studentInfo) != 8:
+            sys.exit("Error: Invalid file format")
         self.line = line
         self.stLastName = studentInfo[0]
         self.stFirstName = studentInfo[1]
