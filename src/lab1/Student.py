@@ -10,7 +10,7 @@ class Student:
         self.grade = studentInfo[2]
         self.classroom = studentInfo[3]
         self.bus = studentInfo[4]
-        self.gpa = studentInfo[5]
+        self.gpa = float(studentInfo[5])
         self.tLastName = studentInfo[6]
         self.tFirstName = studentInfo[7]
 

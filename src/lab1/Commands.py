@@ -55,20 +55,29 @@ class Commands:
 
         studentList = data[grade]
         for student in studentList:
-            if high is True:
-                if highestGPA is None or student.gpa > highestGPA:
+            if high:
+                if highestGPA is None or student.gpa > highestGPA.gpa:
                     highestGPA = student
-            elif low is True:
-                if lowestGPA is None or student.gpa < lowestGPA:
+            elif low:
+                if lowestGPA is None or student.gpa < lowestGPA.gpa:
                     lowestGPA = student
+            else:
+                print("Student Last Name: " + student.stLastName)
+                print("Student First Name: " + student.stFirstName)
+                print("\n")
 
-        print("Student Last Name: " + student.stLastName)
-        print("Student First Name: " + student.stFirstName)
-        print("GPA: " + student.gpa)
-        print("Teacher Last Name: " + student.tLastName)
-        print("Teacher First Name: " + student.tFirstName)
-        print("Bus: " + student.bus)
-        print("\n")
+        if low or high:
+            if highestGPA is not None:
+                student = highestGPA
+            else:
+                student = lowestGPA
+            print("Student Last Name: " + student.stLastName)
+            print("Student First Name: " + student.stFirstName)
+            print("GPA: " + str(student.gpa))
+            print("Teacher Last Name: " + student.tLastName)
+            print("Teacher First Name: " + student.tFirstName)
+            print("Bus: " + student.bus)
+            print("\n")
 
     def searchAverage(self, grade, data):
         # method for searchng given a grade
@@ -86,7 +95,7 @@ class Commands:
         avgGPA = sum / num_students
 
         print("Grade: " + grade)
-        print("Average GPA: " + avgGPA)
+        print("Average GPA: " + str(avgGPA))
         print("\n\n")
 
     def info(self, data):
@@ -96,13 +105,7 @@ class Commands:
             key = str(grade)
             studentList = []
             if key in data:
-                studentList = key
+                studentList = data[key]
             print(key + ": " + str(len(studentList)))
-        print("\n")
 
-if __name__ == '__main__':
-    dicts = StudentDicts.StudentDicts("students.txt")
-    Commands().searchStudent("abcde", True, dicts.by_st_last_name)
-    Commands().searchTeacher("FAFARD", dicts.by_t_last_name)
-    Commands().searchBus("54", dicts.by_bus)
-    Commands().info(dicts.by_grade)
+        print("\n")
