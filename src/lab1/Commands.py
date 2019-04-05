@@ -21,12 +21,11 @@ class Commands:
 
     def searchTeacher(self, lastname, data):
         # method for searching given a teacher lastname
-        for key in data.by_t_last_name:
-            if key == lastname:
-                student = data.by_t_last_name[lastname]
-                print("Student Last Name: " + student.stLastName)
-                print("Student First Name: " + student.stFirstName)
-                print("\n")
+        studentList = data.by_t_last_name[lastname]
+        for student in studentList:
+            print("Student Last Name: " + student.stLastName)
+            print("Student First Name: " + student.stFirstName)
+            print("\n")
         print("\n")
 
     def searchBus(self, bus, data):
@@ -95,3 +94,4 @@ class Commands:
 if __name__ == '__main__':
     dicts = StudentDicts.StudentDicts("students.txt")
     Commands().searchStudent("NOVICK", True, dicts)
+    Commands().searchTeacher("FAFARD", dicts)
