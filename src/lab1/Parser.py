@@ -6,6 +6,9 @@ def parser(studentDict):
     while(True):
         rawInput = input("Please enter the option for query: ")
         parsedInput = rawInput.split()
+
+        if len(parsedInput) == 0:
+            continue
     
         if parsedInput[0] == "S" or parsedInput[0]=="Student":
             search_by_student(parsedInput, studentDict)
@@ -29,7 +32,7 @@ def parser(studentDict):
             break
     
         else:
-            print("Unrecognized input, please try again\n")
+            print("Unrecognized input, please try again")
 
 def search_by_student(parsedInput, studentDict):
     if len(parsedInput) == 2:
@@ -38,15 +41,15 @@ def search_by_student(parsedInput, studentDict):
         if parsedInput[2] == "B" or parsedInput[2] == "Bus":
             Commands().searchStudent(parsedInput[1], True, studentDict.by_st_last_name)
         else:
-            print("Usage: S[tudent] <lastname> B[us]\n")
+            print("Usage: S[tudent] <lastname> B[us]")
     else:
-        print("Usage: S[tudent] <lastname>\n")
+        print("Usage: S[tudent] <lastname>")
 
 def searchByTeacher(parsedInput, studentDict):
     if len(parsedInput) == 2:
         Commands().searchTeacher(parsedInput[1], studentDict.by_t_last_name)
     else:
-        print("Usage: T[eacher] <lastname>\n")
+        print("Usage: T[eacher] <lastname>")
 
 def searchByGrade(parsedInput, studentDict):
     if len(parsedInput) == 2:
@@ -57,21 +60,21 @@ def searchByGrade(parsedInput, studentDict):
         elif parsedInput[2] == "L" or parsedInput[2] == "Low":
             Commands().searchGrade(parsedInput[1], False, True, studentDict.by_grade)
         else:
-            print("Usage: G[rade] <Number> H[igh] or G[rade] <Number L[ow]>\n")
+            print("Usage: G[rade] <Number> H[igh] or G[rade] <Number L[ow]>")
     else:
-        print("Usage: G[rade] <Number>\n")
+        print("Usage: G[rade] <Number>")
 
 def searchByBus(parsedInput, studentDict):
     if len(parsedInput) == 2:
         Commands().searchBus(parsedInput[1], studentDict.by_bus)
     else:
-        print("Usage: B[us] <Number>\n")
+        print("Usage: B[us] <Number>")
 
 def searchByGpa(parsedInput, studentDict):
     if len(parsedInput) == 2:
         Commands().searchAverage(parsedInput[1], studentDict.by_grade)
     else:
-        print("Usage: A[verage] <Number>\n")
+        print("Usage: A[verage] <Number>")
 
 if __name__ == "__main__":
     # main method to run the entire program to produce user requested query data

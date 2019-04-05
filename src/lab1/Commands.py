@@ -11,14 +11,14 @@ class Commands:
             print("Student Last Name: " + student.stLastName)
             print("Student First Name: " + student.stFirstName)
             if bus is True:
-                print("Bus Route:" + student.bus)
+                print("Bus Route: " + student.bus)
             else:
                 print("Grade: " + student.grade)
                 print("Classroom Assignment: " + student.classroom)
                 print("Teacher Last Name: " + student.tLastName)
                 print("Teacher First Name: " + student.tFirstName)
-            print("\n")
-        print("\n")
+            print("")
+        print("")
 
     def searchTeacher(self, lastname, data):
         # method for searching given a teacher lastname
@@ -28,8 +28,8 @@ class Commands:
         for student in studentList:
             print("Student Last Name: " + student.stLastName)
             print("Student First Name: " + student.stFirstName)
-            print("\n")
-        print("\n")
+            print("")
+        print("")
 
     def searchBus(self, bus, data):
         if not (bus in data):
@@ -41,8 +41,8 @@ class Commands:
             print("Student First Name: " + student.stFirstName)
             print("Grade: " + student.grade)
             print("Classroom Assignment: " + student.classroom)
-            print("\n")
-        print("\n")
+            print("")
+        print("")
 
     def searchGrade(self, grade, high, low, data):
         # method for searching given a grade with boolean high and low options
@@ -63,7 +63,7 @@ class Commands:
             else:
                 print("Student Last Name: " + student.stLastName)
                 print("Student First Name: " + student.stFirstName)
-                print("\n")
+                print("")
 
         if low or high:
             if highestGPA is not None:
@@ -76,7 +76,7 @@ class Commands:
             print("Teacher Last Name: " + student.tLastName)
             print("Teacher First Name: " + student.tFirstName)
             print("Bus: " + student.bus)
-            print("\n")
+            print("")
 
     def searchAverage(self, grade, data):
         # method for searchng given a grade
@@ -95,7 +95,7 @@ class Commands:
 
         print("Grade: " + grade)
         print("Average GPA: " + str(avgGPA))
-        print("\n\n")
+        print("")
 
     def info(self, data):
         # method for info command
@@ -107,4 +107,4 @@ class Commands:
                 studentList = data[key]
             print(key + ": " + str(len(studentList)))
 
-        print("\n")
+        print("")
