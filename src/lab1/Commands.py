@@ -1,4 +1,3 @@
-import StudentDicts
 
 class Commands:
     """class implementing search commands"""
