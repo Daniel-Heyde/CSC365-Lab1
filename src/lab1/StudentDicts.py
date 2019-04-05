@@ -18,10 +18,6 @@ class StudentDicts:
             self.add_to_dict(student, self.by_t_last_name, student.tLastName)
             self.add_to_dict(student, self.by_bus, student.bus)
             self.add_to_dict(student, self.by_grade, student.grade)
-        print(self.by_st_last_name)
-        print(self.by_t_last_name)
-        print(self.by_bus)
-        print(self.by_grade)
 
     def add_to_dict(self, student, dict, key):
         if key in dict:
