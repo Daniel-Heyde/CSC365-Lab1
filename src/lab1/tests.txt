@@ -1,0 +1,562 @@
+// CSC 365 Spring 19
+// Lab 1-1 test suite
+
+// TC-1
+// Tests Requirements R3, R4, E1
+// incomplete Student command
+// expected output:
+	Usage: S[tudent] <lastname>
+
+S
+
+// TC-2
+// Tests Requirements R3, R4
+// Student command with nonexistent student
+// expected output: <empty line>
+
+S FakeName
+
+// TC-3
+// Tests Requirements R3, R5
+// Student command with nonexistent student and bus option
+// expected output: <empty line>
+
+S FakeName B
+
+// TC-4
+// Tests Requirements R3, R5, E1
+// Student command with student lastname and invalid option
+// expected output:
+	Usage: S[tudent] <lastname> B[us]
+
+S BEX InvalidOption
+
+// TC-5
+// Tests Requirements R3, R4
+// Student command with student lastname
+// expected output:
+	Student Last Name: WERST
+	Student First Name: LEON
+	Grade: 6
+	Classroom Assignment: 111
+	Teacher Last Name: NISTENDIRK
+	Teacher First Name: NANCY
+
+S WERST
+
+// TC-6
+// Tests Requirements R3, R4
+// Student command with student lastname
+// expected output:
+	Student Last Name: OGAS
+	Student First Name: ERVIN
+	Grade: 4
+	Classroom Assignment: 105
+	Teacher Last Name: HANTZ
+	Teacher First Name: JED
+
+Student OGAS
+
+// TC-7
+// Tests Requirements R3, R5
+// Student command with student lastname with bus option
+// expected output:
+	Student Last Name: GUM
+	Student First Name: NOAH
+	Bus Route: 54
+
+S GUM B
+
+// TC-8
+// Tests Requirements R3, R5
+// Student command with student lastname with bus option
+// expected output:
+	Student Last Name: BEAN
+	Student First Name: INGER
+	Bus Route: 56
+
+S Bean Bus
+
+// TC-9
+// Tests Requirements R3, R5, E1
+// Student command with student lastname with bus option
+// expected output:
+	Student Last Name: MULGREW
+	Student First Name: RANDELL
+	Bus Route: 54
+
+Student MULGREW B
+
+// TC-10
+// Tests Requirements R3, R5
+// Student command with student lastname with bus option
+// expected output:
+	Student Last Name: GARTH
+	Student First Name: JOHN
+	Bus Route: 0
+
+Student GARTH B
+
+// TC-11
+// Tests Requirements R3, R6, E1
+// incomplete Teacher command
+// expected output:
+	Usage: T[eacher] <lastname>
+
+T
+
+// TC-12
+// Tests Requirements R3, R6
+// Teacher command with nonexistant student
+// expected output: <empty line>
+
+T FakeName
+
+// TC-13
+// Tests Requirements R3, R6
+// Teacher command with teacher lastname
+// expected output:
+	Student Last Name: LIBRANDI
+	Student First Name: TODD
+
+	Student Last Name: HAVIR
+	Student First Name: BOBBIE
+
+	Student Last Name: SARAO
+	Student First Name: DIEDRA
+
+	Student Last Name: VANCOTT
+	Student First Name: MIKE
+
+	Student Last Name: WICINSKY
+	Student First Name: TERESE
+
+	Student Last Name: KOZOLA
+	Student First Name: BUSTER
+
+	Student Last Name: MULLINGS
+	Student First Name: LEIGHANN
+
+	Student Last Name: BUSSMANN
+	Student First Name: BILLY
+
+	Student Last Name: BERBES
+	Student First Name: DICK
+
+	Student Last Name: MULGREW
+	Student First Name: RANDELL
+
+	Student Last Name: TOWLEY
+	Student First Name: LANE
+
+T HAMER
+
+// TC-14
+// Tests Requirements R3, R6
+// Teacher command with teacher lastname
+// expected output:
+	Student Last Name: SCHOENECKER
+	Student First Name: PHUONG
+
+	Student Last Name: CLECKLER
+	Student First Name: FLOY
+
+	Student Last Name: KRAKE
+	Student First Name: VALENTIN
+
+	Student Last Name: CREMEANS
+	Student First Name: RANDOLPH
+
+	Student Last Name: KREESE
+	Student First Name: CARRIE
+
+T GAMBREL
+
+// TC-15
+// Tests Requirements R3, R7, E1
+// incomplete Grade command
+// expected output:
+	Usage: G[rade] <Number>
+
+G
+
+// TC-16
+// Tests Requirements R3, R7
+// Grade command with nonexistent grade number
+// expected output: <empty line>
+
+G 0
+
+// TC-17
+// Tests Requirements R3, R7
+// Grade command with grade number
+// expected output:
+	Student Last Name: SAELEE
+	Student First Name: DANILO
+
+	Student Last Name: GARTH
+	Student First Name: JOHN
+
+G 1
+
+// TC-18
+// Tests Requirements R3, R7
+// Grade command with grade number
+// expected output:
+	Student Last Name: CORKER
+	Student First Name: CARTER
+
+	Student Last Name: IMMERMAN
+	Student First Name: DEVIN
+
+	Student Last Name: RAPOSE
+	Student First Name: ALONZO
+
+	Student Last Name: WORBINGTON
+	Student First Name: DEEDRA
+
+	Student Last Name: OGAS
+	Student First Name: ERVIN
+
+	Student Last Name: SPANICEK
+	Student First Name: KENDRA
+
+	Student Last Name: GUICE
+	Student First Name: CODI
+
+	Student Last Name: GLOR
+	Student First Name: HUNG
+
+	Student Last Name: GUM
+	Student First Name: NOAH
+
+	Student Last Name: MASSART
+	Student First Name: ELDON
+
+	Student Last Name: NOVICK
+	Student First Name: ROLLAND
+
+	Student Last Name: DURAND
+	Student First Name: CARLEE
+
+	Student Last Name: BEX
+	Student First Name: TAMESHA
+
+	Student Last Name: DELUNA
+	Student First Name: KRYSTAL
+
+	Student Last Name: COMO
+	Student First Name: ZANDRA
+
+Grade 4
+
+// TC-19
+// Tests Requirements R3, R7
+// Grade command with grade number
+// expected output:
+	Student Last Name: SCHOENECKER
+	Student First Name: PHUONG
+
+	Student Last Name: RACANELLO
+	Student First Name: NOEL
+
+	Student Last Name: STERBACK
+	Student First Name: PETER
+
+	Student Last Name: FINCHMAN
+	Student First Name: MATHILDA
+
+	Student Last Name: ZAPPAVIGNA
+	Student First Name: ELLIOTT
+
+	Student Last Name: OBREIN
+	Student First Name: STAN
+
+	Student Last Name: CORONADO
+	Student First Name: DIMPLE
+
+	Student Last Name: SAENPHIMMACHA
+	Student First Name: NUMBERS
+
+	Student Last Name: BOYTER
+	Student First Name: WAN
+
+	Student Last Name: BREVO
+	Student First Name: JANNETTE
+
+	Student Last Name: CLECKLER
+	Student First Name: FLOY
+
+	Student Last Name: KRAKE
+	Student First Name: VALENTIN
+
+	Student Last Name: KEMERER
+	Student First Name: ROSETTA
+
+	Student Last Name: BEAN
+	Student First Name: INGER
+
+	Student Last Name: DEMARTINI
+	Student First Name: DEWAYNE
+
+	Student Last Name: CREMEANS
+	Student First Name: RANDOLPH
+
+	Student Last Name: FEYEREISEN
+	Student First Name: WILFREDO
+
+	Student Last Name: WERST
+	Student First Name: LEON
+
+	Student Last Name: LAMKIN
+	Student First Name: TAMA
+
+	Student Last Name: KREESE
+	Student First Name: CARRIE
+
+	Student Last Name: FRIEDSTROM
+	Student First Name: REED
+
+Grade 6
+
+// TC-20
+// Tests Requirements R3, R9
+// Grade command with grade number and High option
+// expected output:
+	Student Last Name: GARTH
+	Student First Name: JOHN
+	GPA: 3.14
+	Teacher Last Name: FALKER
+	Teacher First Name: ADOLPH
+	Bus: 0
+
+G 1 High
+
+// TC-21
+// Tests Requirements R3, R9
+// Grade command with grade number and High option
+// expected output:
+	Student Last Name: WICINSKY
+	Student First Name: TERESE
+	GPA: 3.22
+	Teacher Last Name: HAMER
+	Teacher First Name: GAVIN
+	Bus: 53
+
+G 2 H
+
+// TC-22
+// Tests Requirements R3, R9
+// Grade command with grade number and Low option
+// expected output:
+	Student Last Name: IMMERMAN
+	Student First Name: DEVIN
+	GPA: 2.78
+	Teacher Last Name: HANTZ
+	Teacher First Name: JED
+	Bus: 52
+
+G 4 Low
+
+// TC-23
+// Tests Requirements R3, R9
+// Grade command with grade number and Low option
+// expected output:
+	Student Last Name: KRAKE
+	Student First Name: VALENTIN
+	GPA: 2.78
+	Teacher Last Name: GAMBREL
+	Teacher First Name: JAE
+	Bus: 56
+
+G 4 L
+
+// TC-24
+// Tests Requirements R3, R9, E1
+// Grade command with nonexistent grade number and nonexistent option
+// expected output:
+	Usage: G[rade] <Number> H[igh] or G[rade] <Number L[ow]>
+
+G 1000000000 InvalidOption
+
+// TC-25
+// Tests Requirements R3, R8, E1
+// Invalid Bus command
+// expected output:
+	Usage: B[us] <Number>
+
+B
+
+// TC-26
+// Tests Requirements R3, R8
+// Bus command with nonexistent route number
+// expected output: <empty line>
+
+Bus 100000000
+
+// TC-27
+// Tests Requirements R3, R8
+// Bus command with  route number
+// expected output:
+	Student Last Name: WOOLERY
+	Student First Name: NOLAN
+	Grade: 2
+	Classroom Assignment: 104
+
+	Student Last Name: STERBACK
+	Student First Name: PETER
+	Grade: 6
+	Classroom Assignment: 111
+
+	Student Last Name: LIBRANDI
+	Student First Name: TODD
+	Grade: 2
+	Classroom Assignment: 108
+
+	Student Last Name: RAPOSE
+	Student First Name: ALONZO
+	Grade: 4
+	Classroom Assignment: 105
+
+	Student Last Name: COVINGTON
+	Student First Name: TOMAS
+	Grade: 3
+	Classroom Assignment: 107
+
+	Student Last Name: MULLINGS
+	Student First Name: LEIGHANN
+	Grade: 2
+	Classroom Assignment: 108
+
+	Student Last Name: DURAND
+	Student First Name: CARLEE
+	Grade: 4
+	Classroom Assignment: 101
+
+	Student Last Name: FRIEDSTROM
+	Student First Name: REED
+	Grade: 6
+	Classroom Assignment: 106
+
+B 51
+
+// TC-28
+// Tests Requirements R3, R8
+// Bus command with  route number
+// expected output:
+	Student Last Name: COOKUS
+	Student First Name: XUAN
+	Grade: 3
+	Classroom Assignment: 107
+
+	Student Last Name: ELHADDAD
+	Student First Name: SHANTE
+	Grade: 3
+	Classroom Assignment: 107
+
+	Student Last Name: IMMERMAN
+	Student First Name: DEVIN
+	Grade: 4
+	Classroom Assignment: 105
+
+	Student Last Name: OBREIN
+	Student First Name: STAN
+	Grade: 6
+	Classroom Assignment: 111
+
+	Student Last Name: CORONADO
+	Student First Name: DIMPLE
+	Grade: 6
+	Classroom Assignment: 102
+
+	Student Last Name: SARAO
+	Student First Name: DIEDRA
+	Grade: 2
+	Classroom Assignment: 108
+
+	Student Last Name: EARLY
+	Student First Name: TORY
+	Grade: 3
+	Classroom Assignment: 107
+
+	Student Last Name: KEMERER
+	Student First Name: ROSETTA
+	Grade: 6
+	Classroom Assignment: 102
+
+Bus 52
+
+// TC-29
+// Tests Requirements R3, R10, E1
+// Invalid Average command
+// expected output:
+	Usage: A[verage] <Number>
+
+A
+
+// TC-30
+// Tests Requirements R3, R10
+// Average command with nonexistent grade
+// expected output: <empty line>
+
+A 100000000
+
+// TC-31
+// Tests Requirements R3, R10
+// Average command with grade
+// expected output: 
+	Grade: 2
+	Average GPA: 2.946153846153846
+
+A 2
+
+// TC-32
+// Tests Requirements R3, R10
+// Average command with grade
+// expected output: <empty line>
+	Grade: 3
+	Average GPA: 3.048888888888889
+
+Average 3
+
+// TC-33
+// Test Requirements R3, R11
+// Info command
+// expected output:
+	0: 0
+	1: 2
+	2: 13
+	3: 9
+	4: 15
+	5: 0
+	6: 21
+
+I
+
+// TC-34
+// Test Requirements R3, R11
+// Info command
+// expected output:
+	0: 0
+	1: 2
+	2: 13
+	3: 9
+	4: 15
+	5: 0
+	6: 21
+
+Info
+
+// TC-35
+// Test Requirements R3, R12
+// Quit command
+// expected output: program terminates
+
+Q
+
+// TC-36
+// Test Requirements R3, R12
+// Quit command
+// expected output: program terminates
+
+Quit
