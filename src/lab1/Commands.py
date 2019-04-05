@@ -91,11 +91,13 @@ class Commands:
 
     def info(self, data):
         # method for info command
+
         for grade in range(0,7,1):
-            count = 0
-            studentList = data[grade]
-            count += len(studentList)
-            print("Grade: " + count)
+            key = str(grade)
+            studentList = []
+            if key in data:
+                studentList = key
+            print(key + ": " + str(len(studentList)))
         print("\n")
 
 if __name__ == '__main__':
@@ -103,3 +105,4 @@ if __name__ == '__main__':
     Commands().searchStudent("abcde", True, dicts.by_st_last_name)
     Commands().searchTeacher("FAFARD", dicts.by_t_last_name)
     Commands().searchBus("54", dicts.by_bus)
+    Commands().info(dicts.by_grade)
