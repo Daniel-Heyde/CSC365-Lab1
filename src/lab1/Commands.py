@@ -5,6 +5,8 @@ class Commands:
 
     def searchStudent(self, lastname, bus, data):
         # method for searching given a student lastname and an optional boolean bus option
+        if not (lastname in data):
+            return
         studentList = data[lastname]
         for student in studentList:
             print("Student Last Name: " + student.stLastName)
@@ -21,6 +23,8 @@ class Commands:
 
     def searchTeacher(self, lastname, data):
         # method for searching given a teacher lastname
+        if not (lastname in data):
+            return
         studentList = data[lastname]
         for student in studentList:
             print("Student Last Name: " + student.stLastName)
@@ -29,6 +33,8 @@ class Commands:
         print("\n")
 
     def searchBus(self, bus, data):
+        if not (bus in data):
+            return
         # method for searching given a bus route number
         studentList = data[bus]
         for student in studentList:
@@ -43,6 +49,9 @@ class Commands:
         # method for searching given a grade with boolean high and low options
         highestGPA = None
         lowestGPA = None
+
+        if not (grade in data):
+            return
 
         studentList = data[grade]
         for student in studentList:
@@ -66,6 +75,9 @@ class Commands:
         sum = 0
         num_students = 0
 
+        if not (grade in data):
+            return
+
         studentList = data[grade]
         for student in studentList:
             sum += student.gpa
@@ -88,6 +100,6 @@ class Commands:
 
 if __name__ == '__main__':
     dicts = StudentDicts.StudentDicts("students.txt")
-    Commands().searchStudent("NOVICK", True, dicts.by_st_last_name)
+    Commands().searchStudent("abcde", True, dicts.by_st_last_name)
     Commands().searchTeacher("FAFARD", dicts.by_t_last_name)
     Commands().searchBus("54", dicts.by_bus)
