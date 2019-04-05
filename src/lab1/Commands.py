@@ -1,32 +1,31 @@
+import StudentDicts
 
 class Commands:
     """class implementing search commands"""
 
     def searchStudent(self, lastname, bus, data):
         # method for searching given a student lastname and an optional boolean bus option
-        for key in data.by_st_last_name:
-            if key == lastname:
-                student = data.by_st_last_name[lastname]
-                print("Student Last Name: " + student.stLastName)
-                print("Student First Name: " + student.stFirstName)
-                if bus is True:
-                    print("Bus Route:" + student.bus)
-                else:
-                    print("Grade: " + student.grade)
-                    print("Classroom Assignment: " + student.classroom)
-                    print("Teacher Last Name: " + student.tLastName)
-                    print("Teacher First Name: " + student.tFirstName)
-                print("\n")
+        studentList = data.by_st_last_name[lastname]
+        for student in studentList:
+            print("Student Last Name: " + student.stLastName)
+            print("Student First Name: " + student.stFirstName)
+            if bus is True:
+                print("Bus Route:" + student.bus)
+            else:
+                print("Grade: " + student.grade)
+                print("Classroom Assignment: " + student.classroom)
+                print("Teacher Last Name: " + student.tLastName)
+                print("Teacher First Name: " + student.tFirstName)
+            print("\n")
         print("\n")
 
     def searchTeacher(self, lastname, data):
         # method for searching given a teacher lastname
-        for key in data.by_t_last_name:
-            if key == lastname:
-                student = data.by_t_last_name[lastname]
-                print("Student Last Name: " + student.stLastName)
-                print("Student First Name: " + student.stFirstName)
-                print("\n")
+        studentList = data.by_t_last_name[lastname]
+        for student in studentList:
+            print("Student Last Name: " + student.stLastName)
+            print("Student First Name: " + student.stFirstName)
+            print("\n")
         print("\n")
 
     def searchBus(self, bus, data):
@@ -92,4 +91,7 @@ class Commands:
             print("Grade: " + count)
         print("\n")
 
-
+if __name__ == '__main__':
+    dicts = StudentDicts.StudentDicts("students.txt")
+    Commands().searchStudent("NOVICK", True, dicts)
+    Commands().searchTeacher("FAFARD", dicts)
