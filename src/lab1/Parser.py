@@ -35,7 +35,7 @@ def search_by_student(parsedInput, studentDict):
     if len(parsedInput) == 2:
         Commands().searchStudent(parsedInput[1], False, studentDict.by_st_last_name)
     elif len(parsedInput) == 3:
-        if parsedInput[1] == "B" or parsedInput[1] == "Bus":
+        if parsedInput[2] == "B" or parsedInput[2] == "Bus":
             Commands().searchStudent(parsedInput[1], True, studentDict.by_st_last_name)
         else:
             print("Usage: S[tudent] <lastname> B[us]\n")
