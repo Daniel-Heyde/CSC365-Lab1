@@ -5,7 +5,7 @@ class Commands:
 
     def searchStudent(self, lastname, bus, data):
         # method for searching given a student lastname and an optional boolean bus option
-        studentList = data.by_st_last_name[lastname]
+        studentList = data[lastname]
         for student in studentList:
             print("Student Last Name: " + student.stLastName)
             print("Student First Name: " + student.stFirstName)
@@ -21,7 +21,7 @@ class Commands:
 
     def searchTeacher(self, lastname, data):
         # method for searching given a teacher lastname
-        studentList = data.by_t_last_name[lastname]
+        studentList = data[lastname]
         for student in studentList:
             print("Student Last Name: " + student.stLastName)
             print("Student First Name: " + student.stFirstName)
@@ -30,11 +30,10 @@ class Commands:
 
     def searchBus(self, bus, data):
         # method for searching given a bus route number
-        studentList = data.by_bus[bus]
+        studentList = data[bus]
         for student in studentList:
             print("Student Last Name: " + student.stLastName)
             print("Student First Name: " + student.stFirstName)
-            print("Grade:")
             print("Grade: " + student.grade)
             print("Classroom Assignment: " + student.classroom)
             print("\n")
@@ -45,7 +44,7 @@ class Commands:
         highestGPA = None
         lowestGPA = None
 
-        studentList = data.by_grade[grade]
+        studentList = data[grade]
         for student in studentList:
             if high is True:
                 if highestGPA is None or student.gpa > highestGPA:
@@ -67,7 +66,7 @@ class Commands:
         sum = 0
         num_students = 0
 
-        studentList = data.by_grade[grade]
+        studentList = data[grade]
         for student in studentList:
             sum += student.gpa
             num_students += 1
@@ -82,12 +81,13 @@ class Commands:
         # method for info command
         for grade in range(0,7,1):
             count = 0
-            studentList = data.by_grade[grade]
+            studentList = data[grade]
             count += len(studentList)
             print("Grade: " + count)
         print("\n")
 
 if __name__ == '__main__':
     dicts = StudentDicts.StudentDicts("students.txt")
-    Commands().searchStudent("NOVICK", True, dicts)
-    Commands().searchTeacher("FAFARD", dicts)
+    Commands().searchStudent("NOVICK", True, dicts.by_st_last_name)
+    Commands().searchTeacher("FAFARD", dicts.by_t_last_name)
+    Commands().searchBus("54", dicts.by_bus)
