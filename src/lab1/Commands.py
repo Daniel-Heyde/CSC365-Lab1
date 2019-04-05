@@ -31,15 +31,14 @@ class Commands:
 
     def searchBus(self, bus, data):
         # method for searching given a bus route number
-        for key in data.by_bus:
-            if key == bus:
-                student = data.by_bus[bus]
-                print("Student Last Name: " + student.stLastName)
-                print("Student First Name: " + student.stFirstName)
-                print("Grade:")
-                print("Grade: " + student.grade)
-                print("Classroom Assignment: " + student.classroom)
-                print("\n")
+        studentList = data.by_bus[bus]
+        for student in studentList:
+            print("Student Last Name: " + student.stLastName)
+            print("Student First Name: " + student.stFirstName)
+            print("Grade:")
+            print("Grade: " + student.grade)
+            print("Classroom Assignment: " + student.classroom)
+            print("\n")
         print("\n")
 
     def searchGrade(self, grade, high, low, data):
@@ -47,15 +46,14 @@ class Commands:
         highestGPA = None
         lowestGPA = None
 
-        for key in data.by_grade:
-            if key == grade:
-                student = data.by_grade[grade]
-                if high is True:
-                    if highestGPA is None or student.gpa > highestGPA:
-                        highestGPA = student
-                elif low is True:
-                    if lowestGPA is None or student.gpa < lowestGPA:
-                        lowestGPA = student
+        studentList = data.by_grade[grade]
+        for student in studentList:
+            if high is True:
+                if highestGPA is None or student.gpa > highestGPA:
+                    highestGPA = student
+            elif low is True:
+                if lowestGPA is None or student.gpa < lowestGPA:
+                    lowestGPA = student
 
         print("Student Last Name: " + student.stLastName)
         print("Student First Name: " + student.stFirstName)
@@ -70,11 +68,10 @@ class Commands:
         sum = 0
         num_students = 0
 
-        for key in data.by_grade:
-            if key == grade:
-                student = data.by_grade[grade]
-                sum += student.gpa
-                num_students += 1
+        studentList = data.by_grade[grade]
+        for student in studentList:
+            sum += student.gpa
+            num_students += 1
 
         avgGPA = sum / num_students
 
@@ -86,9 +83,8 @@ class Commands:
         # method for info command
         for grade in range(0,7,1):
             count = 0
-            for key in data.by_grade:
-                if key == grade:
-                    count += 1
+            studentList = data.by_grade[grade]
+            count += len(studentList)
             print("Grade: " + count)
         print("\n")
 
