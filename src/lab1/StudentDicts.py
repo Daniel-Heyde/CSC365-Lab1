@@ -1,4 +1,5 @@
 import Student
+import sys
 
 class StudentDicts:
     by_st_last_name = {}
@@ -26,7 +27,12 @@ class StudentDicts:
 
     # read data file line by line
     def read_data_from_file(self, filename):
-        file = open(filename, "r")
+        try:
+            file = open(filename, "r")
+        except IOError:
+            print("Error: File does not appear to exist.")
+            sys.exit()
+        
         studentList = []
         for line in file:
             studentList.append(Student.Student(line.strip()))
