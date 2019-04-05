@@ -39,5 +39,3 @@ class StudentDicts:
             studentList.append(Student.Student(line.strip()))
         return studentList
 
-if __name__ == "__main__":
-    StudentDicts("students.txt")
