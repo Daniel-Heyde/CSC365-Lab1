@@ -5,7 +5,6 @@ class StudentDicts:
     by_t_last_name = {}
     by_bus = {}
     by_grade = {}
-    by_gpa = {}
 
     def __init__(self, filename):
         students = self.read_data_from_file(filename)
