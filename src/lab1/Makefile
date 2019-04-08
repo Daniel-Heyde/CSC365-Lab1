@@ -1,2 +1,2 @@
 run:
-	python3 Parser.py students.txt
+	python3 schoolsearch.py students.txt
