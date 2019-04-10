@@ -108,7 +108,6 @@ class Commands:
             print(key + ": " + str(len(studentList)))
 
         print("")
-<<<<<<< HEAD
 
     def searchClassroom(self, classroom, option, data):
         # search
@@ -118,5 +117,3 @@ class Commands:
 
     def dataAnalyze(self, option, data):
         # search
-=======
->>>>>>> 26bace3d15dc4970d9787036770fd97ae1ef9eff
