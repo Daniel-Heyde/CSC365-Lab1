@@ -89,8 +89,8 @@ class Commands:
                 print("Student Last Name: " + student.stLastName)
                 print("Student First Name: " + student.stFirstName)
                 print("GPA: " + str(student.gpa))
-                print("Teacher Last Name: " + student.TLastName)
-                print("Teacher First Name: " + student.TFirstName)
+                print("Teacher Last Name: " + student.teachers[0].TFirstName)
+                print("Teacher First Name: " + student.teachers[0].TLastName)
                 print("Bus: " + student.bus)
                 print("")
 
@@ -160,8 +160,8 @@ class Commands:
             studentList = data.by_class_num_student[classroom]
             for student in studentList:
                 count += 1
-            print("Classroom: " + classroom)
-            print("Enrollment: " + count)
+            print("Classroom: " + str(classroom))
+            print("Enrollment: " + str(count))
             print("")
         print("")
 
@@ -183,7 +183,7 @@ class Commands:
                     num_students += 1
                     print(student.gpa)
                 print("")
-                print("Average GPA in Grade " + grade + "= " + averageGPA/num_students)
+                print("Average GPA in Grade " + str(grade) + "= " + str(averageGPA/num_students))
                 print("")
 
         elif option == 2:
@@ -196,9 +196,9 @@ class Commands:
                 for student in studentList:
                     averageGPA += student.gpa
                     num_students += 1
-                    print(student.gpa)
+                    print(str(student.gpa))
                 print("")
-                print("Average GPA in Teacher " + teacher + "= " + averageGPA / num_students)
+                print("Average GPA in Teacher " + teacher + "= " + str(averageGPA / num_students))
                 print("")
 
         elif option ==3:
@@ -206,12 +206,12 @@ class Commands:
             for bus in buses:
                 averageGPA = 0
                 num_students = 0
-                print("GPA's in Bus: " + bus + "\n")
+                print("GPA's in Bus: " + str(bus) + "\n")
                 studentList = data.by_bus[bus]
                 for student in studentList:
                     averageGPA += student.gpa
                     num_students += 1
                     print(student.gpa)
                 print("")
-                print("Average GPA in Bus " + bus + "= " + averageGPA / num_students)
+                print("Average GPA in Bus " + str(bus) + "= " + str(averageGPA / num_students))
                 print("")
