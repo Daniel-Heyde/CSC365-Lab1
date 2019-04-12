@@ -108,3 +108,12 @@ class Commands:
             print(key + ": " + str(len(studentList)))
 
         print("")
+
+    def searchClassroom(self, classroom, option, data):
+        # search
+
+    def enrollment(self, data):
+        # search
+
+    def dataAnalyze(self, option, data):
+        # search
