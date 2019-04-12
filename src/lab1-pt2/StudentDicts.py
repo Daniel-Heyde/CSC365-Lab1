@@ -26,15 +26,12 @@ class StudentDicts:
     def __init__(self, student_file, teacher_file):
         students = self.read_students_from_file(student_file)
         teachers = self.read_teachers_from_file(teacher_file)
-        self.create_teacher_dict(teachers)
-        self.create_student_dicts(students)
-
-    def create_teacher_dict(self, teacher_list):
-        for teacher in teacher_list:
-            self.add_to_dict(teacher, self.by_class_num_teacher, teacher.classroom)
+        self.create_dictionaries(students, teachers)
 
     # create dictionaries from list of student objects
-    def create_student_dicts(self, student_list):
+    def create_dictionaries(self, student_list, teacher_list):
+        for teacher in teacher_list:
+            self.add_to_dict(teacher, self.by_class_num_teacher, teacher.classroom)
         for student in student_list:
             student.teachers = self.by_class_num_teacher[student.classroom]
             self.add_to_dict(student, self.by_class_num_student, student.classroom)
