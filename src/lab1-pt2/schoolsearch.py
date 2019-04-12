@@ -32,7 +32,7 @@ def parser(studentDict):
             Commands().enrollment(studentDict)
             
         elif parsedInput[0] == "D" or parsedInput[0] == "Data":
-            Commands().enrollment(studentDict)
+            Commands().analytics(parsedInput, studentDict)
             
         elif parsedInput[0] == "I" or parsedInput[0] == "Info":
             Commands().info(studentDict)
@@ -89,12 +89,35 @@ def searchByGpa(parsedInput, studentDict):
 def searchByClassroom(parsedInput, studentDict):
     if len(parsedInput) == 3:
         if parsedInput[2] == "S" or parsedInput[2] == "Student":
-            Commands().searchClassroom(parsedInput[1], 1, studentDict);
+            Commands().searchClassroom(parsedInput[1], 1, studentDict)
         elif parsedInput[2] == "T" or parsedInput[2] == "Teacher":
-            Commands().searchClassroom(parsedInput[1], 2, studentDict);
+            Commands().searchClassroom(parsedInput[1], 2, studentDict)
         else:
             print("Usage: C[lassroom] <Number> S[tudent] or C[lassroom] <Number> T[eacher] ");
+    else:
+            print("Usage: C[lassroom] <Number> S[tudent] or C[lassroom] <Number> T[eacher] ");
 
+def analytics(parsedInput, studentDict):
+    if len(parsedInput) == 3:
+        if parsedInput[1] == "G" or parsedInput[1] == "Grade":
+            #parsedInput[2] would be the grader number of the student
+            Commands().dataAnalyze(parsedInput[1], parsedInput[2], 1, studentDict)
+        elif parsedInput[1] == "B" or parsedInput[1] == "Bus":
+            #parsedInput[2] would be the bus route number of student 
+            Commands().dataAnalyze(parsedInput[1], parsedInput[2], 2, studentDict)
+        else:
+            print("Usage: D[ata] G[rade] <Number> or D[ata] B[us] <Number>")
+            
+    elif len(parsedInput) == 4:
+        if parsedInput[1] == "G" or parsedInput[1] == "Grade":
+            if parsedInput[3] == "T" or parsedInput[3] == "Teacher":
+                #parsedInput[2] as grader number 
+                Commands().dataAnalyze(parsedInput[1], parsedInput[2], 3, studentDict)
+        else:
+            print("Usage: D[ata] G[rade] <Number> T[eacher]")
+    else:
+        print("Usage: D[ata] G[rade] <Number> or D[ata] B[us] <Number> or D[ata] G[rade] <Number> T[eacher]")
+        
 if __name__ == "__main__":
     # main method to run the entire program to produce user requested query data
     studentDict = StudentDicts("students.txt")
