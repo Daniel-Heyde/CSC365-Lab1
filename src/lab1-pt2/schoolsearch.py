@@ -32,7 +32,7 @@ def parser(studentDict):
             Commands().enrollment(studentDict)
             
         elif parsedInput[0] == "D" or parsedInput[0] == "Data":
-            Commands().analytics(parsedInput, studentDict)
+            analytics(parsedInput, studentDict)
             
         elif parsedInput[0] == "I" or parsedInput[0] == "Info":
             Commands().info(studentDict)
