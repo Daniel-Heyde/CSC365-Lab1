@@ -7,7 +7,7 @@ class Student:
         # parse given file line into student object
         studentInfo = line.split(",")
         if len(studentInfo) != 6:
-            sys.exit("Error: Invalid file format")
+            sys.exit("Error: Invalid student file format")
         self.line = line
         self.stLastName = studentInfo[0]
         self.stFirstName = studentInfo[1]
@@ -15,6 +15,10 @@ class Student:
         self.classroom = studentInfo[3]
         self.bus = studentInfo[4]
         self.gpa = float(studentInfo[5])
+        self.teachers = None
 
     def __repr__(self):
-        return "("+self.line+")"
+        teach_string = ""
+        for teacher in self.teachers:
+            teach_string += teacher.__repr__()
+        return "\n\t("+self.line+", "+ teach_string + ")\n"
