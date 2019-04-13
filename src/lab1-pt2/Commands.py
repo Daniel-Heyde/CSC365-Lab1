@@ -4,9 +4,9 @@ class Commands:
 
     def searchStudent(self, lastname, bus, data):
         # method for searching given a student lastname and an optional boolean bus option
-        if not (lastname in data):
+        if not (lastname in data.by_st_last_name):
             return
-        studentList = data.by_st_last_bame[lastname]
+        studentList = data.by_st_last_name[lastname]
         for student in studentList:
             print("Student Last Name: " + student.stLastName)
             print("Student First Name: " + student.stFirstName)
@@ -15,8 +15,8 @@ class Commands:
             else:
                 print("Grade: " + student.grade)
                 print("Classroom Assignment: " + student.classroom)
-                print("Teacher Last Name: " + student.tLastName)
-                print("Teacher First Name: " + student.tFirstName)
+                print("Teacher Last Name: " + student.teachers[0].TLastName)
+                print("Teacher First Name: " + student.teachers[0].TFirstName)
             print("")
         print("")
 
@@ -176,14 +176,13 @@ class Commands:
             for grade in grades:
                 averageGPA = 0
                 num_students = 0
-                print("GPA's in Grade: " + grade + "\n")
+                print("GPA's in Grade: " + grade)
                 studentList = data.by_grade_student[grade]
                 for student in studentList:
                     averageGPA += student.gpa
                     num_students += 1
                     print(student.gpa)
-                print("")
-                print("Average GPA in Grade " + str(grade) + "= " + str(averageGPA/num_students))
+                print("Average GPA in Grade " + str(grade) + " = " + str(averageGPA/num_students))
                 print("")
 
         elif option == 2:
@@ -191,14 +190,13 @@ class Commands:
             for teacher in teachers:
                 averageGPA = 0
                 num_students = 0
-                print("GPA's in Teacher: " + teacher + "\n")
+                print("GPA's in Teacher: " + teacher)
                 studentList = data.by_t_last_name[teacher]
                 for student in studentList:
                     averageGPA += student.gpa
                     num_students += 1
                     print(str(student.gpa))
-                print("")
-                print("Average GPA in Teacher " + teacher + "= " + str(averageGPA / num_students))
+                print("Average GPA in Teacher " + teacher + " = " + str(averageGPA / num_students))
                 print("")
 
         elif option ==3:
@@ -206,12 +204,11 @@ class Commands:
             for bus in buses:
                 averageGPA = 0
                 num_students = 0
-                print("GPA's in Bus: " + str(bus) + "\n")
+                print("GPA's in Bus: " + str(bus))
                 studentList = data.by_bus[bus]
                 for student in studentList:
                     averageGPA += student.gpa
                     num_students += 1
                     print(student.gpa)
-                print("")
-                print("Average GPA in Bus " + str(bus) + "= " + str(averageGPA / num_students))
+                print("Average GPA in Bus " + str(bus) + " = " + str(averageGPA / num_students))
                 print("")
