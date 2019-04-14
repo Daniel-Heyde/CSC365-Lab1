@@ -1,0 +1,52 @@
+S
+S FakeName
+S FakeName B
+S BEX InvalidOption
+S WERST
+Student OGAS
+S GUM B
+S BEAN Bus
+Student MULGREW B
+Student GARTH Bus
+T
+T FakeName
+T HAMER
+Teacher GAMBREL
+G
+G 0
+G 1
+Grade 4
+Grade 6
+G 1 High
+G 2 H
+G 4 Low
+G 6 L
+G 1000000000 InvalidOption
+B
+Bus 100000000
+B 51
+Bus 52
+A
+A 100000000
+A 2
+Average 3
+I
+Info
+C
+C 100000 S
+C 112 S
+Classroom 107 S
+C 112 T
+Classroom 107 T
+G 4 T
+Grade 3 Teacher
+G 0 T
+E
+Enrollment
+D
+D INVALID
+D G
+D B
+Data Teacher
+Q
+Quit
