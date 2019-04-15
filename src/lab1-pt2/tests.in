@@ -42,10 +42,8 @@ C Student
 C Teacher
 C Fake
 Classroom 
-Classroom S
-Classroom T
-Classroom Student
-Classroom Teacher  
+Classroom 107 Student
+Classroom 107 Teacher  
 Classroom Fake
 E
 Enrollment
@@ -65,5 +63,20 @@ Data B
 Data T
 Data Teacher
 Data Fake 
+C 100000 S
+C 112 S
+Classroom 107 S
+C 112 T
+Classroom 107 T
+G 4 T
+Grade 3 Teacher
+G 0 T
+E
+Enrollment
+D
+D INVALID
+D G
+D B
+Data Teacher
 Q
 Quit

@@ -1,0 +1,740 @@
+python3 schoolsearch.py list.txt teachers.txt
+Please enter the option for query: Usage: S[tudent] <lastname>
+Please enter the option for query: Please enter the option for query: Please enter the option for query: Usage: S[tudent] <lastname> B[us]
+Please enter the option for query: Student Last Name: WERST
+Student First Name:  LEON
+Grade: 6
+Classroom Assignment: 111
+Teacher Last Name: NISTENDIRK
+Teacher First Name: NANCY
+
+
+Please enter the option for query: Student Last Name: OGAS
+Student First Name:  ERVIN
+Grade: 4
+Classroom Assignment: 105
+Teacher Last Name: HANTZ
+Teacher First Name: JED
+
+
+Please enter the option for query: Student Last Name: GUM
+Student First Name:  NOAH
+Bus Route: 54
+
+
+Please enter the option for query: Student Last Name: BEAN
+Student First Name:  INGER
+Bus Route: 56
+
+
+Please enter the option for query: Student Last Name: MULGREW
+Student First Name:  RANDELL
+Bus Route: 54
+
+
+Please enter the option for query: Student Last Name: GARTH
+Student First Name:  JOHN
+Bus Route: 0
+
+
+Please enter the option for query: Usage: T[eacher] <lastname>
+Please enter the option for query: Please enter the option for query: Student Last Name: LIBRANDI
+Student First Name:  TODD
+
+Student Last Name: HAVIR
+Student First Name:  BOBBIE
+
+Student Last Name: SARAO
+Student First Name:  DIEDRA
+
+Student Last Name: VANCOTT
+Student First Name:  MIKE
+
+Student Last Name: WICINSKY
+Student First Name:  TERESE
+
+Student Last Name: KOZOLA
+Student First Name:  BUSTER
+
+Student Last Name: MULLINGS
+Student First Name:  LEIGHANN
+
+Student Last Name: BUSSMANN
+Student First Name:  BILLY
+
+Student Last Name: BERBES
+Student First Name:  DICK
+
+Student Last Name: MULGREW
+Student First Name:  RANDELL
+
+Student Last Name: TOWLEY
+Student First Name:  LANE
+
+
+Please enter the option for query: Student Last Name: SCHOENECKER
+Student First Name:  PHUONG
+
+Student Last Name: CLECKLER
+Student First Name:  FLOY
+
+Student Last Name: KRAKE
+Student First Name:  VALENTIN
+
+Student Last Name: CREMEANS
+Student First Name:  RANDOLPH
+
+Student Last Name: KREESE
+Student First Name:  CARRIE
+
+
+Please enter the option for query: Usage: G[rade] <Number>
+Please enter the option for query: Please enter the option for query: Student Last Name: SAELEE
+Student First Name:  DANILO
+
+Student Last Name: GARTH
+Student First Name:  JOHN
+
+Please enter the option for query: Student Last Name: CORKER
+Student First Name:  CARTER
+
+Student Last Name: IMMERMAN
+Student First Name:  DEVIN
+
+Student Last Name: RAPOSE
+Student First Name:  ALONZO
+
+Student Last Name: WORBINGTON
+Student First Name:  DEEDRA
+
+Student Last Name: OGAS
+Student First Name:  ERVIN
+
+Student Last Name: SPANICEK
+Student First Name:  KENDRA
+
+Student Last Name: GUICE
+Student First Name:  CODI
+
+Student Last Name: GLOR
+Student First Name:  HUNG
+
+Student Last Name: GUM
+Student First Name:  NOAH
+
+Student Last Name: MASSART
+Student First Name:  ELDON
+
+Student Last Name: NOVICK
+Student First Name:  ROLLAND
+
+Student Last Name: DURAND
+Student First Name:  CARLEE
+
+Student Last Name: BEX
+Student First Name:  TAMESHA
+
+Student Last Name: DELUNA
+Student First Name:  KRYSTAL
+
+Student Last Name: COMO
+Student First Name:  ZANDRA
+
+Please enter the option for query: Student Last Name: SCHOENECKER
+Student First Name:  PHUONG
+
+Student Last Name: RACANELLO
+Student First Name:  NOEL
+
+Student Last Name: STERBACK
+Student First Name:  PETER
+
+Student Last Name: FINCHMAN
+Student First Name:  MATHILDA
+
+Student Last Name: ZAPPAVIGNA
+Student First Name:  ELLIOTT
+
+Student Last Name: OBREIN
+Student First Name:  STAN
+
+Student Last Name: CORONADO
+Student First Name:  DIMPLE
+
+Student Last Name: SAENPHIMMACHA
+Student First Name:  NUMBERS
+
+Student Last Name: BOYTER
+Student First Name:  WAN
+
+Student Last Name: BREVO
+Student First Name:  JANNETTE
+
+Student Last Name: CLECKLER
+Student First Name:  FLOY
+
+Student Last Name: KRAKE
+Student First Name:  VALENTIN
+
+Student Last Name: KEMERER
+Student First Name:  ROSETTA
+
+Student Last Name: BEAN
+Student First Name:  INGER
+
+Student Last Name: DEMARTINI
+Student First Name:  DEWAYNE
+
+Student Last Name: CREMEANS
+Student First Name:  RANDOLPH
+
+Student Last Name: FEYEREISEN
+Student First Name:  WILFREDO
+
+Student Last Name: WERST
+Student First Name:  LEON
+
+Student Last Name: LAMKIN
+Student First Name:  TAMA
+
+Student Last Name: KREESE
+Student First Name:  CARRIE
+
+Student Last Name: FRIEDSTROM
+Student First Name:  REED
+
+Please enter the option for query: Student Last Name: GARTH
+Student First Name:  JOHN
+GPA: 3.14
+Teacher Last Name: ADOLPH
+Teacher First Name: FALKER
+Bus: 0
+
+Please enter the option for query: Student Last Name: WICINSKY
+Student First Name:  TERESE
+GPA: 3.22
+Teacher Last Name: GAVIN
+Teacher First Name: HAMER
+Bus: 53
+
+Please enter the option for query: Student Last Name: IMMERMAN
+Student First Name:  DEVIN
+GPA: 2.78
+Teacher Last Name: JED
+Teacher First Name: HANTZ
+Bus: 52
+
+Please enter the option for query: Student Last Name: KRAKE
+Student First Name:  VALENTIN
+GPA: 2.78
+Teacher Last Name: JAE
+Teacher First Name: GAMBREL
+Bus: 56
+
+Please enter the option for query: Usage: G[rade] <Number> H[igh] or G[rade] <Number> L[ow] or G[rade] <Number> T[eacher]
+Please enter the option for query: Usage: B[us] <Number>
+Please enter the option for query: Please enter the option for query: Student Last Name: WOOLERY
+Student First Name:  NOLAN
+Grade: 2
+Classroom Assignment: 104
+
+Student Last Name: STERBACK
+Student First Name:  PETER
+Grade: 6
+Classroom Assignment: 111
+
+Student Last Name: LIBRANDI
+Student First Name:  TODD
+Grade: 2
+Classroom Assignment: 108
+
+Student Last Name: RAPOSE
+Student First Name:  ALONZO
+Grade: 4
+Classroom Assignment: 105
+
+Student Last Name: COVINGTON
+Student First Name:  TOMAS
+Grade: 3
+Classroom Assignment: 107
+
+Student Last Name: MULLINGS
+Student First Name:  LEIGHANN
+Grade: 2
+Classroom Assignment: 108
+
+Student Last Name: DURAND
+Student First Name:  CARLEE
+Grade: 4
+Classroom Assignment: 101
+
+Student Last Name: FRIEDSTROM
+Student First Name:  REED
+Grade: 6
+Classroom Assignment: 106
+
+
+Please enter the option for query: Student Last Name: COOKUS
+Student First Name:  XUAN
+Grade: 3
+Classroom Assignment: 107
+
+Student Last Name: ELHADDAD
+Student First Name:  SHANTE
+Grade: 3
+Classroom Assignment: 107
+
+Student Last Name: IMMERMAN
+Student First Name:  DEVIN
+Grade: 4
+Classroom Assignment: 105
+
+Student Last Name: OBREIN
+Student First Name:  STAN
+Grade: 6
+Classroom Assignment: 111
+
+Student Last Name: CORONADO
+Student First Name:  DIMPLE
+Grade: 6
+Classroom Assignment: 102
+
+Student Last Name: SARAO
+Student First Name:  DIEDRA
+Grade: 2
+Classroom Assignment: 108
+
+Student Last Name: EARLY
+Student First Name:  TORY
+Grade: 3
+Classroom Assignment: 107
+
+Student Last Name: KEMERER
+Student First Name:  ROSETTA
+Grade: 6
+Classroom Assignment: 102
+
+
+Please enter the option for query: Usage: A[verage] <Number>
+Please enter the option for query: Please enter the option for query: Grade: 2
+Average GPA: 2.946153846153846
+
+Please enter the option for query: Grade: 3
+Average GPA: 3.048888888888889
+
+Please enter the option for query: 0: 0
+1: 2
+2: 13
+3: 9
+4: 15
+5: 0
+6: 21
+
+Please enter the option for query: 0: 0
+1: 2
+2: 13
+3: 9
+4: 15
+5: 0
+6: 21
+
+Please enter the option for query: Usage: C[lassroom] <Number> S[tudent] or C[lassroom] <Number> T[eacher] 
+Please enter the option for query: Please enter the option for query: Student Last Name: WORBINGTON
+Student First Name:  DEEDRA
+
+Student Last Name: SPANICEK
+Student First Name:  KENDRA
+
+Student Last Name: GUICE
+Student First Name:  CODI
+
+Student Last Name: GLOR
+Student First Name:  HUNG
+
+Student Last Name: GUM
+Student First Name:  NOAH
+
+Student Last Name: NOVICK
+Student First Name:  ROLLAND
+
+Student Last Name: DELUNA
+Student First Name:  KRYSTAL
+
+Student Last Name: COMO
+Student First Name:  ZANDRA
+
+
+Please enter the option for query: Student Last Name: COOKUS
+Student First Name:  XUAN
+
+Student Last Name: ELHADDAD
+Student First Name:  SHANTE
+
+Student Last Name: SWEDLUND
+Student First Name:  SHARRI
+
+Student Last Name: CIGANEK
+Student First Name:  MANIE
+
+Student Last Name: COVINGTON
+Student First Name:  TOMAS
+
+Student Last Name: EARLY
+Student First Name:  TORY
+
+Student Last Name: LINHART
+Student First Name:  LELA
+
+
+Please enter the option for query: Teacher Last Name: CHIONCHIO
+Teacher First Name: PERLA
+
+
+Please enter the option for query: Teacher Last Name: FAFARD
+Teacher First Name: ROCIO
+
+
+Please enter the option for query: Teacher Last Name: HANTZ
+Teacher First Name: JED
+
+Teacher Last Name: CHIONCHIO
+Teacher First Name: PERLA
+
+Teacher Last Name: COOL
+Teacher First Name: REUBEN
+
+Please enter the option for query: Teacher Last Name: FAFARD
+Teacher First Name: ROCIO
+
+Teacher Last Name: ALPERT
+Teacher First Name: JONATHAN
+
+Please enter the option for query: Please enter the option for query: Classroom: 101
+Enrollment: 1
+
+Classroom: 102
+Enrollment: 5
+
+Classroom: 103
+Enrollment: 2
+
+Classroom: 104
+Enrollment: 2
+
+Classroom: 105
+Enrollment: 6
+
+Classroom: 106
+Enrollment: 2
+
+Classroom: 107
+Enrollment: 7
+
+Classroom: 108
+Enrollment: 11
+
+Classroom: 109
+Enrollment: 5
+
+Classroom: 110
+Enrollment: 2
+
+Classroom: 111
+Enrollment: 9
+
+Classroom: 112
+Enrollment: 8
+
+
+Please enter the option for query: Classroom: 101
+Enrollment: 1
+
+Classroom: 102
+Enrollment: 5
+
+Classroom: 103
+Enrollment: 2
+
+Classroom: 104
+Enrollment: 2
+
+Classroom: 105
+Enrollment: 6
+
+Classroom: 106
+Enrollment: 2
+
+Classroom: 107
+Enrollment: 7
+
+Classroom: 108
+Enrollment: 11
+
+Classroom: 109
+Enrollment: 5
+
+Classroom: 110
+Enrollment: 2
+
+Classroom: 111
+Enrollment: 9
+
+Classroom: 112
+Enrollment: 8
+
+
+Please enter the option for query: Usage: D[ata] G[rade] or D[ata] B[us] or D[ata] T[eacher]
+Please enter the option for query: Usage: D[ata] G[rade] or D[ata] B[us] or D[ata] T[eacher]
+Please enter the option for query: GPA's in Grade: 1
+2.85
+3.14
+Average GPA in Grade 1 = 2.995
+
+GPA's in Grade: 2
+2.92
+2.88
+2.96
+2.88
+2.79
+2.89
+3.22
+2.76
+3.09
+3.01
+2.93
+3.05
+2.92
+Average GPA in Grade 2 = 2.946153846153846
+
+GPA's in Grade: 3
+3.07
+2.86
+3.11
+3.24
+2.79
+3.11
+2.91
+3.12
+3.23
+Average GPA in Grade 3 = 3.048888888888889
+
+GPA's in Grade: 4
+3.12
+2.78
+3.12
+2.99
+2.84
+3.1
+2.98
+2.87
+2.95
+2.8
+2.97
+2.91
+2.82
+3.02
+3.0
+Average GPA in Grade 4 = 2.951333333333334
+
+GPA's in Grade: 6
+3.15
+3.13
+3.02
+2.81
+3.15
+2.95
+2.88
+2.88
+3.1
+2.82
+3.14
+2.78
+2.84
+2.84
+2.93
+2.88
+2.89
+3.22
+3.23
+2.85
+3.03
+Average GPA in Grade 6 = 2.9771428571428578
+
+Please enter the option for query: GPA's in Bus: 0
+3.15
+2.81
+3.11
+2.88
+2.8
+3.14
+2.88
+2.85
+Average GPA in Bus 0 = 2.9525
+
+GPA's in Bus: 51
+2.92
+3.02
+2.96
+3.12
+3.11
+3.09
+2.91
+3.03
+Average GPA in Bus 51 = 3.02
+
+GPA's in Bus: 52
+3.07
+2.86
+2.78
+2.95
+2.88
+2.79
+2.91
+2.84
+Average GPA in Bus 52 = 2.885
+
+GPA's in Bus: 53
+3.12
+2.99
+2.79
+3.1
+3.14
+3.22
+3.12
+3.02
+3.0
+Average GPA in Bus 53 = 3.0555555555555554
+
+GPA's in Bus: 54
+2.84
+2.98
+2.82
+2.89
+2.87
+2.85
+2.95
+2.93
+3.05
+2.97
+3.23
+2.92
+Average GPA in Bus 54 = 2.941666666666667
+
+GPA's in Bus: 55
+3.24
+3.15
+2.88
+3.1
+2.76
+2.93
+2.82
+3.22
+3.23
+Average GPA in Bus 55 = 3.0366666666666666
+
+GPA's in Bus: 56
+3.13
+2.88
+2.78
+2.84
+3.01
+2.89
+Average GPA in Bus 56 = 2.9216666666666664
+
+Please enter the option for query: GPA's in Teacher: ALPERT
+3.11
+3.23
+Average GPA in Teacher ALPERT = 3.17
+
+GPA's in Teacher: BODZIONY
+3.15
+3.03
+Average GPA in Teacher BODZIONY = 3.09
+
+GPA's in Teacher: CHIONCHIO
+2.99
+3.1
+2.98
+2.87
+2.95
+2.97
+3.02
+3.0
+Average GPA in Teacher CHIONCHIO = 2.985
+
+GPA's in Teacher: COOL
+2.91
+Average GPA in Teacher COOL = 2.91
+
+GPA's in Teacher: FAFARD
+3.07
+2.86
+3.24
+2.79
+3.11
+2.91
+3.12
+Average GPA in Teacher FAFARD = 3.0142857142857147
+
+GPA's in Teacher: FALKER
+2.85
+3.14
+Average GPA in Teacher FALKER = 2.995
+
+GPA's in Teacher: GAMBREL
+3.15
+3.14
+2.78
+2.88
+2.85
+Average GPA in Teacher GAMBREL = 2.96
+
+GPA's in Teacher: HAMER
+2.96
+2.88
+2.79
+2.89
+3.22
+2.76
+3.09
+3.01
+2.93
+3.05
+2.92
+Average GPA in Teacher HAMER = 2.9545454545454546
+
+GPA's in Teacher: HANTZ
+3.12
+2.78
+3.12
+2.84
+2.8
+2.82
+Average GPA in Teacher HANTZ = 2.9133333333333336
+
+GPA's in Teacher: KERBS
+3.13
+2.88
+3.1
+2.84
+2.93
+Average GPA in Teacher KERBS = 2.976
+
+GPA's in Teacher: NISTENDIRK
+3.02
+2.81
+2.95
+2.88
+2.82
+2.84
+2.89
+3.22
+3.23
+Average GPA in Teacher NISTENDIRK = 2.962222222222222
+
+GPA's in Teacher: STEIB
+2.92
+2.88
+Average GPA in Teacher STEIB = 2.9
+
+Please enter the option for query: 
