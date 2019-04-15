@@ -1,4 +1,8 @@
-
+'''
+    Daniel Heyde
+    Flo Costa
+    Steven Sun
+'''
 class Commands:
     """class implementing search commands"""
 
