@@ -20,10 +20,7 @@ Grade 6
 G 1 High
 G 2 H
 G 4 Low
-G 6 L
-G 2 T
-G 2 Teacher 
-G 2 Faketeacher
+G 4 L
 G 1000000000 InvalidOption
 B
 Bus 100000000
@@ -36,33 +33,6 @@ Average 3
 I
 Info
 C
-C S
-C T
-C Student
-C Teacher
-C Fake
-Classroom 
-Classroom 107 Student
-Classroom 107 Teacher  
-Classroom Fake
-E
-Enrollment
-D
-D G
-D Grade
-D Bus
-D B
-D T
-D Teacher 
-D Fake
-Data
-Data G
-Data Grade
-Data Bus
-Data B
-Data T
-Data Teacher
-Data Fake 
 C 100000 S
 C 112 S
 Classroom 107 S
