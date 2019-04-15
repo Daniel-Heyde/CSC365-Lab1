@@ -1,3 +1,9 @@
+'''
+    Daniel Heyde
+    Flo Costa
+    Steven Sun
+'''
+
 from StudentDicts import StudentDicts
 from Commands import Commands
 
