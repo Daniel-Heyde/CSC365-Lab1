@@ -1,3 +1,9 @@
+'''
+    Daniel Heyde
+    Flo Costa
+    Steven Sun
+'''
+
 import sys
 
 class Teacher:
